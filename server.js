@@ -66,3 +66,4 @@ app.post('/api/notes', (req, res) => {
 });
 
 //LISTENS to ensure app is active
+app.listen(PORT, () => console.log(`Listening to the server on PORT ${PORT}`))
