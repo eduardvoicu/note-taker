@@ -37,3 +37,8 @@ const readAndAppend = (content, file) => {
         }
     });
 };
+
+// GET to retrieve stored data
+app.get('/api/notes', (req, res) => {
+    res.json(database.notes);
+});
