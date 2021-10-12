@@ -9,3 +9,12 @@ const PORT = process.env.PORT || 3001;
 
 // all static files in "public" folder will be served
 app.use(express.static('public'));
+// middleware for parsing JSON
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+// GET to homepage
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
+});
+// GET to notes page
+
