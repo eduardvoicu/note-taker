@@ -44,3 +44,25 @@ app.get('/api/notes', (req, res) => {
 app.get('/api/notes', (req, res) => { 
     res.json(database);
 });
+//POST to add new notes
+app.post('/api/notes', (req, res) => {
+    
+    const { title, text } = req.body;
+
+    if (req.body) {
+        const newNote = {
+            title,
+            text,
+
+            note_id: uid(),
+        };
+
+        readAndAppend(newNote, './db/db.json');
+        res.json(`Note added!`);
+        database.push(newNote)
+    } else {
+        res.error(`There was an error adding your note.`);
+    }
+});
+
+//LISTENS to ensure app is active
