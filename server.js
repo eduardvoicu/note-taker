@@ -24,7 +24,6 @@ app.get('/notes', function (req, res) {
 const writeToFile = (destination, content) =>
     fs.writeFile(destination, JSON.stringify(content, null, 4), (err) =>
         err ? console.error(err) : console.info(`nData written to ${destination}`));
-
 // read data from/to append/write content to it
 const readAndAppend = (content, file) => {
     fs.readFile(file, 'utf8', (err, data) => {
@@ -37,8 +36,11 @@ const readAndAppend = (content, file) => {
         }
     });
 };
-
 // GET to retrieve stored data
 app.get('/api/notes', (req, res) => {
     res.json(database.notes);
+});
+// GET to retrieve all stored notes
+app.get('/api/notes', (req, res) => { 
+    res.json(database);
 });
