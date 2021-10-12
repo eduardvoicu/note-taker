@@ -17,4 +17,11 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 // GET to notes page
+app.get('/notes', function (req, res) {
+    res.sendFile(path.join(__dirname, 'public/notes.html'));
+});
+// write data to json file
+const writeToFile = (destination, content) =>
+    fs.writeFile(destination, JSON.stringify(content, null, 4), (err) =>
+        err ? console.error(err) : console.info(`nData written to ${destination}`));
 
