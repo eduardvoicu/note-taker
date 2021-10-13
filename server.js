@@ -54,7 +54,7 @@ app.post('/api/notes', (req, res) => {
             title,
             text,
 
-            note_id: uid(),
+            id: uid(),
         };
 
         readAndAppend(newNote, './db/db.json');

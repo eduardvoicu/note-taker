@@ -4,13 +4,13 @@
         "text":"Test text"
     },
     {
-        "title": "wsdrt",
-        "text": "wsdrt",
-        "note_id": 256
+        "title": "1234",
+        "text": "12345",
+        "id": 448
     },
     {
         "title": "mnblkj",
         "text": "mnblkj",
-        "note_id": 500
+        "id": 417
     }
 ]

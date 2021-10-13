@@ -2,11 +2,10 @@
 
 ## Directory
 1. [Deployed Link](#Deployed-link)
-2. [Intializing Instructions](#Intializing-Intructions)
-3. [User Story](#user-story)
-4. [Screenshot](#screenshot)
-5. [Technology](#technology)
-4. [MIT License](#mit-license)
+2. [User Story](#user-story)
+3. [Screenshot](#screenshot)
+4. [Technology](#technology)
+5. [MIT License](#mit-license)
 
 ## Deployed Links
 
@@ -18,13 +17,6 @@ https://fierce-brushlands-50325.herokuapp.com/notes
 
 https://github.com/eduardvoicu/note-taker
 
-## Intializing Instructions
-
-To start `git clone`
-In terminal
-
-
-
 ## User Story
 
 ```
@@ -35,7 +27,16 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete.
 
 ## Screenshot
 
+![main page screenshot](./images/mainpage.png)
+![second page screenshot](./images/secondpage.png)
+
 ## Technology
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Express.js
 
 # MIT License
 
